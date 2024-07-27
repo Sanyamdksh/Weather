@@ -19,3 +19,6 @@ This website provides real-time weather information for various locations around
 -**JavaScript**
 
 -**OpenWeatherMap API**
+
+
+**You can check the weather of your city here :** [weather]( https://sanyamdksh.github.io/Weather/)
