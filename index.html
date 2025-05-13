@@ -8,10 +8,10 @@
   </head>
   <body>
     <div class="card">
-      <div class="search">
+      <form class="search">
         <input type="text" placeholder="enter city name" spellcheck="false" />
         <button><img src="images/search.png" /></button>
-      </div>
+      </form>
       <div class="error">
         <p>Data not found</p>
       </div>
@@ -83,7 +83,8 @@
           document.querySelector(".error").style.display = "none";
         }
       }
-      searchBtn.addEventListener("click", () => {
+      document.querySelector(".search").addEventListener("submit", (e) => {
+        e.preventDefault();
         weather(searchBox.value);
       });
     </script>
